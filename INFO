@@ -1,0 +1,9 @@
+Build  -  mvn clean install
+Create the CRD in ereches NS - kubectl -n ereches apply -f src/main/resources/crd.yaml
+See podset is created (but no podsets yet) - kubectl -n ereches get podset
+Run the operator  - mvn exec:java -Dexec.mainClass=io.fabric8.podset.operator.PodSetOperatorMain
+Create a resource instance (the operator will create the pods) - kubectl -n ereches apply -f src/main/resources/cr.yaml
+see the pods in k8s or "kubectl get pods"
+See the podest instance - kubectl -n ereches get podset
+Delete all podset instances (but not the podset definition) kubectl -n ereches delete podsets --all
+Delete the crd definition  - kubectl  delete crd podsets.demo.fabric8.io
