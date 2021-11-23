@@ -30,8 +30,8 @@ public class PodSetOperatorMain {
         try (KubernetesClient client = new DefaultKubernetesClient()) {
             String namespace = client.getNamespace();
             if (namespace == null) {
-                logger.log(Level.INFO, "No namespace found via config, assuming default.");
-                namespace = "default";
+                logger.log(Level.INFO, "No namespace found via config, assuming ereches.");
+                namespace = "ereches";
             }
 
             logger.log(Level.INFO, "Using namespace : " + namespace);
