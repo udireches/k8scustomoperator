@@ -1,3 +1,7 @@
+NOTE ereches namespace must exist already (for example created thru feature_branch_creation
+OTHERWISE, if no namespace, change the name space in PodSetOperatorMain from ereches to default and run all the below WITHOUT ereches
+
+
 Build  -  mvn clean install
 Create the CRD in ereches NS - kubectl -n ereches apply -f src/main/resources/crd.yaml
 See podset is created (but no podsets yet) - kubectl -n ereches get podset
