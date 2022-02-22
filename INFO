@@ -1,4 +1,5 @@
-Build the shaded fabric8 jar - 'mvn clean install -f pom_to_create_shaded.xml'   IN THE k8customoperator project
+Build the shaded fabric8 jar - 'mvn clean install -f pom_to_create_shaded.xml'   IN  this project
+Build the shaded fabric8 jar for mock  k8s tests- 'mvn clean install -f pom_to_create_shaded_mock.xml' IN  this project
 
 
                        IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT
