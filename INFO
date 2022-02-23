@@ -4,6 +4,10 @@ Build the shaded fabric8 jar for mock  k8s tests- 'mvn clean install -f pom_to_c
 
                        IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT
                        Add to META-INF/resources a copy of the regular resources modfied for the shaded version - see the jar under fabric8shadedlib in k8shadedcustomoperator project
+                       after adding the shaded version file:
+                       use zip -r x.zip *
+                       and then
+                       mv x.zip <jar-file-name>
                        IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT
 
 NOTE ereches namespace must exist already (for example created thru feature_branch_creation
